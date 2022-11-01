@@ -8,7 +8,7 @@ student_name varchar(20),
 marks INT,
 sub varchar(20)
 )
-
+--drop table student
 insert into student values(101,'Sanjana',80,'Maths')
 insert into student values(102,'Sanjana',60,'Economics')
 insert into student values(103,'Sanjana',55,'Commerce')
@@ -73,9 +73,13 @@ insert into student values(148,'ravi',58,'Commerce')
 insert into student values(149,'ravi',68,'English')
 insert into student values(150,'ravi',92,'CS')
 
-create or alter procedure p_as @result int  as
+SELECT * from student
+
+
+
+create or alter procedure stu as
 DECLARE @result table (name varchar(20),max_marks INT)
 insert into @result select student_name,SUM(marks) AS marks from student group by student_name order by marks DESC
-SELECT * from @result
+select name,max_marks,DENSE_RANK() over(order by max_marks DESC) as Rank from @result
 
-EXEC p_3
+EXEC stu 
