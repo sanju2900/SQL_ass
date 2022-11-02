@@ -1,0 +1,10 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = passport_info_ass1
+build_property.ProjectDir = C:\Users\kumari.sanjana\OneDrive - Entain Group\Desktop\SQL_project\28-10-2022\passport_info_ass1\passport_info_ass1\
